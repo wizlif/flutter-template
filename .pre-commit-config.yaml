@@ -1,0 +1,10 @@
+repos:
+  - repo: https://github.com/dart-lang/pre-commit
+    rev: v1.0.0
+    hooks:
+      - id: dart-format
+        args: ["--set-exit-if-changed"]
+      - id: dart-analyze
+      - id: dart-test
+      - id: dart-code-metrics
+        args: ["--fatal-style", "lib/"]
